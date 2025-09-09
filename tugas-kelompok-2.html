@@ -7,6 +7,63 @@
 </head>
 <body>
 
+    <h2>Form Pendaftaran Siswa</h2>
+
+    <form action="#" method="post">
+        <div>
+            <!-- Nama -->
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+        </div>
+
+        <div>
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+        </div>
+
+        <div>
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+        </div>
+
+        <div>
+            <!-- Jenis Kelamin -->
+            <label>Jenis Kelamin:</label>
+            <input type="radio" id="laki" name="jk" value="Laki-laki" required>
+            <label for="laki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jk" value="Perempuan" required>
+            <label for="perempuan">Perempuan</label>
+        </div>
+
+        <div>
+            <!-- Tanggal Lahir -->
+            <label for="tgl_lahir">Tanggal Lahir:</label>
+            <input type="date" id="tgl_lahir" name="tgl_lahir" required>
+        </div>
+
+        <div>
+            <!-- Alamat -->
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat lengkap" required></textarea>
+        </div>
+
+        <div>
+            <!-- Jurusan / Pilihan -->
+            <label for="jurusan">Jurusan:</label>
+            <select id="jurusan" name="jurusan" required>
+                <option value="">--Pilih Jurusan--</option>
+                <option value="RPL">Rekayasa Perangkat Lunak (RPL)</option>
+                <option value="TKJ">Teknik Komputer dan Jaringan (TKJ)</option>
+                <option value="Multimedia">Multimedia</option>
+            </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Daftar</button>
+    </form>
+
     <a href="https://alvanteshapriliandi.github.io/belajar-form/">Kembali</a>
     
 </body>
